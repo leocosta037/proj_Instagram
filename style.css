@@ -69,7 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .profile-photo img {
@@ -114,17 +114,19 @@ body {
 }
 
 .app-download {
-    height: 3rem;
+    height: 6rem;
     width: 10rem;
     background-size: cover;
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
+    background-image: url('./img/aptoide.png');
+    width: 40%;
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
+    background-image: url('./img/apkmirror.png');
+    width: 40%;
 }
 
 /* media queries */
@@ -156,4 +158,31 @@ body {
     .group {
         border: 1px solid transparent;
     }
+}
+
+.get-the-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Dark button */
+
+.dark {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 1rem;
+}
+
+.dark-button {
+    height: 12rem;
+    width: 20rem;
+    background-size: cover;
+}
+
+.dark-button:nth-child(1) {
+    background-image: url('./img/dark.png');
+    width: 100%;
 }
